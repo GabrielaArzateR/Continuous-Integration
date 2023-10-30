@@ -2,5 +2,5 @@
 
 
 def hellogaby() -> None:
-    """Prints hello world"""
-    print('hellogaby + !')
+    """Prints hello gaby"""
+    print('hello gaby!')
