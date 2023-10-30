@@ -1,6 +1,6 @@
 """A dummy hello world"""
 
 
-def helloword() -> None:
+def hellogaby() -> None:
     """Prints hello world"""
-    print('Hello world !')
+    print('hellogaby + !')
