@@ -14,7 +14,7 @@ setup(
     author_email="axel.mendoza@epita.fr",
     description="Example description",
     license="BSD",
-    packages=['mymodule'],
+    packages=['newmodule'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",

@@ -17,7 +17,7 @@
     "python.linting.enabled": true,
     "python.linting.pylintUseMinimalCheckers": false,
     "python.linting.pylintCategorySeverity.refactor": "Warning",
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "none",
     "editor.semanticHighlighting.enabled": false,
     "python.languageServer": "Pylance",
     "editor.bracketPairColorization.enabled": false,
@@ -28,5 +28,8 @@
         "--disallow-untyped-defs",
         "--no-implicit-optional"
     ],
-    "python.analysis.typeCheckingMode": "off"
+    "python.analysis.typeCheckingMode": "off",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
 }
