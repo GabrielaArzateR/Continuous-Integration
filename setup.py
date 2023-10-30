@@ -8,7 +8,7 @@ def read(fname: str) -> str:
 
 
 setup(
-    name="Dummy module",
+    name="New module",
     version="0.0.1",
     author="Axel Mendoza",
     author_email="axel.mendoza@epita.fr",
