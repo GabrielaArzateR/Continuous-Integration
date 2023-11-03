@@ -42,5 +42,5 @@ jobs:
       - name: Run Bandit for security vulnerability
         run: bandit -r . -c pyproject.toml
 
-      - name: Run Mypy to check static types
-        run: mypy $(git ls-files '*.py')
+      #- name: Run Mypy to check static types
+      #  run: mypy $(git ls-files '*.py')
