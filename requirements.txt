@@ -1,8 +1,11 @@
 pytest
 black
 pylint
-pytest
 bandit
 mypy
 setuptools
 pre-commit
+pandas
+scikit-learn
+numpy
+
