@@ -1,0 +1,6 @@
+# Ignore Python bytecode files
+*.pyc
+
+# Ignore any other cache-related files or directories
+# (Add more patterns as needed)
+cache/
