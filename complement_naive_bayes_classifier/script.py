@@ -21,7 +21,7 @@ from complement_naive_bayes_classifier.visualization import model_performance
 
 
 # pylint: disable=too-many-locals
-def train_test(data_path):
+def train_test(data_path: str) -> None:
     """
     This function loads a dataset, performs data segmentation, text data transformation,
     model training, and model testing using the Complement Naive Bayes classifier.

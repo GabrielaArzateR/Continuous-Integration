@@ -1,13 +1,14 @@
 """
 This module provides preprocessing functions for the complement naive Bayes classifier.
 """
-
+from typing import Tuple
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
+from scipy.sparse import csr_matrix
 
 
-def load_data(data_path):
+def load_data(data_path: str) -> pd.DataFrame:
     """
     Load a dataset from a CSV file.
 
@@ -27,7 +28,7 @@ def load_data(data_path):
     return data
 
 
-def data_segmentation(data):
+def data_segmentation(data: pd.DataFrame) -> Tuple[pd.Series, pd.Series, pd.Series, pd.Series]:
     """
     Split the data into training and testing sets for machine learning.
 
@@ -57,7 +58,7 @@ def data_segmentation(data):
     return x_train, x_test, y_train, y_test
 
 
-def feature_engineering(x_train, x_test):
+def feature_engineering(x_train: pd.Series, x_test: pd.Series) -> Tuple[csr_matrix, csr_matrix]:
     """
     Perform feature engineering on text data.
     (Text Data Transformation from Text to Numbers)

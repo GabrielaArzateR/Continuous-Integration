@@ -2,11 +2,15 @@
 This module provides functions for testing a machine learning model on the testing data and
 evaluating its performance.
 """
-
+from typing import Tuple
 import numpy as np
+from scipy.sparse import csr_matrix
+from sklearn.naive_bayes import ComplementNB
 
 
-def model_testing(best_model, x_test_transf):
+def model_testing(
+    best_model: ComplementNB, x_test_transf: csr_matrix
+) -> Tuple[ComplementNB, np.ndarray, np.ndarray]:
     """
     Test a machine learning model on the testing data and evaluate its performance.
 

@@ -16,11 +16,11 @@ repos:
         language: system
         types: [python]
         args: [-j 0, --rcfile=.pylintrc]
-    #-   id: mypy
-    #    entry: mypy
-    #    name: mypy
-    #    language: system
-    #    types: [python]
+    -   id: mypy
+        entry: mypy
+        name: mypy
+        language: system
+        types: [python]
     -   id: bandit
         entry: bandit
         name: bandit

@@ -17,7 +17,7 @@ from complement_naive_bayes_classifier.script import (  # pylint: disable=wrong-
 )
 
 
-def main():
+def main() -> None:
     """
     This function parses command-line arguments and runs the Complement Naive Bayes Classifier.
 

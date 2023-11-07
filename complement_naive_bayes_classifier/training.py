@@ -1,11 +1,12 @@
 """
 This module provides functions for training a machine learning model on the training data.
 """
-
+import pandas as pd
+from scipy.sparse import csr_matrix
 from sklearn.naive_bayes import ComplementNB
 
 
-def model_training(x_train_transf, y_train):
+def model_training(x_train_transf: csr_matrix, y_train: pd.Series) -> ComplementNB:
     """
     Train a machine learning model using the training data.
 
