@@ -58,9 +58,7 @@ def data_segmentation(data: pd.DataFrame) -> Tuple[pd.Series, pd.Series, pd.Seri
     return x_train, x_test, y_train, y_test
 
 
-def feature_engineering(
-    x_train: pd.Series, x_test: pd.Series
-) -> Tuple[csr_matrix, csr_matrix, CountVectorizer]:
+def feature_engineering(x_train: pd.Series, x_test: pd.Series) -> Tuple[csr_matrix, csr_matrix]:
     """
     Perform feature engineering on text data.
     (Text Data Transformation from Text to Numbers)
@@ -86,4 +84,4 @@ def feature_engineering(
     x_train_transf = vectorizer.fit_transform(x_train)
     x_test_transf = vectorizer.transform(x_test)
 
-    return x_train_transf, x_test_transf, vectorizer
+    return x_train_transf, x_test_transf
