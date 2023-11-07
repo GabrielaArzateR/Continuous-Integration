@@ -8,4 +8,5 @@ pre-commit
 pandas
 scikit-learn
 numpy
+matplotlib
 
