@@ -14,7 +14,7 @@ setup(
     author_email="axel.mendoza@epita.fr",
     description="Example description",
     license="BSD",
-    packages=['newmodule'],
+    packages=['complement_naive_bayes_classifier'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",

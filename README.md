@@ -174,13 +174,13 @@ The CI contains the following jobs:
 
 ### Customization
 This repository comes with multiple configuration file that you can modify as you see fit:
-| Package | Description | Configuration file | Job name |
-|---------|-------------|--------------------|----------|
-| Pylint  | Static code analyzer to enforce best practices | `.pylintrc` | `check-linting` |
-| Black   | Code formatter that ensures that every contributor uses the same coding style | `pyproject.toml` under `[tool.black]` section | `check-coding-style` |
-| MyPy | Check type hints to improve further code readability | `pyproject.toml` under `[tool.mypy]` section | `check-static-types` |
-| Bandit | Checks for security vulnerability in the code | `.bandit` | `check-security-vulnerability` |
-| PyTest | Runs a test suite | `pyproject.toml` under `[tool.pytest.ini_options]` section | `run-tests` |
+| Package | Description                                                                   | Configuration file                                         | Job name                       |
+| ------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------ |
+| Pylint  | Static code analyzer to enforce best practices                                | `.pylintrc`                                                | `check-linting`                |
+| Black   | Code formatter that ensures that every contributor uses the same coding style | `pyproject.toml` under `[tool.black]` section              | `check-coding-style`           |
+| MyPy    | Check type hints to improve further code readability                          | `pyproject.toml` under `[tool.mypy]` section               | `check-static-types`           |
+| Bandit  | Checks for security vulnerability in the code                                 | `.bandit`                                                  | `check-security-vulnerability` |
+| PyTest  | Runs a test suite                                                             | `pyproject.toml` under `[tool.pytest.ini_options]` section | `run-tests`                    |
 
 To change the Python version of the CI, edit the `github/workflows/main-ci.yml` file. <br>
 Change the value of the `PYTHON_VERSION` env variable to suit your needs.
