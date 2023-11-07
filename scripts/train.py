@@ -4,14 +4,17 @@ Complement Naive Bayes Classifier on a specified file,
 allowing users to analyze and classify data with the trained model.
 """
 
-# Import necessary libraries and functions
 import os
 import sys
 import argparse
-from complement_naive_bayes_classifier.script import train_test
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(current_directory, '..'))
+
+# Import your `train_test` function from your module
+from complement_naive_bayes_classifier.script import (  # pylint: disable=wrong-import-position
+    train_test,
+)
 
 
 def main():
