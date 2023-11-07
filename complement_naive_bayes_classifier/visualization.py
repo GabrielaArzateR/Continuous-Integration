@@ -2,11 +2,15 @@
 This module provides functions for visualizing the performance of a machine
 learning model using confusion matrices and other visualization techniques.
 """
-
+from typing import Tuple
+import numpy as np
 from sklearn.metrics import classification_report, ConfusionMatrixDisplay
+from sklearn.naive_bayes import ComplementNB
 
 
-def model_performance(y_test, y_test_pred, best_model_tested):
+def model_performance(
+    y_test: np.ndarray, y_test_pred: np.ndarray, best_model_tested: ComplementNB
+) -> Tuple[str, ConfusionMatrixDisplay]:
     """
     Evaluate the performance of a machine learning model and generate visualizations.
 
